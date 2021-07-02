@@ -79,7 +79,7 @@ function resetGame() {
     input.disabled = true;
     feedback.textContent = "Guess a whole number between 1 and 100";
     feedback.style.color = "black";
-    guessesPara.textContent = "Your guesses will go here!";
+    guessesPara.textContent = "Your guesses will go here! You only have 10 guesses!";
     time.textContent = "Elapsed Time: 00:00:00";
     seconds = 0;
     minutes = 0;
