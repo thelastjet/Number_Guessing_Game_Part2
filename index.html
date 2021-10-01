@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1 To 100</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <main>
-        <div class="container" id="container">
-            <div id="headers">
-                <h1>&#8594; &#8594; 1 to 100 &#8592; &#8592;</h1>
-                <h2>A Number Guessing Game</h2>
-            </div>
-            <div id="gamePlay">
-                <p id="feedback">Guess a whole number between 1 and 100</p>
-                <p id="guesses">Your guesses will go here! You only have 10 guesses!</p>
-                <p id="attempt#"></p>
-                <p id="time">Elapsed Time: 00:00:00</p>
-                <input type="text" name="guess" id="guess" placeholder="type number here" disabled />
-                <button id="guess-btn">Start</button>
-                <button id="quit-btn">Reset</button>
-            </div>
-            <div id="gameInfo">
-                <h4>Lowest # of guesses: </h4>
-                <p id="lowest">0</p>
-                <h4>Current # of guesses: </h4>
-                <p id="current">0 of 10!</p>
-            </div>
+      <div class="container" id="container">
+        <div id="headers">
+          <h1>&#8594; &#8594; 1 to 100 &#8592; &#8592;</h1>
+          <h2>A Number Guessing Game</h2>
         </div>
+        <div id="gamePlay">
+          <p id="feedback">Guess a whole number between 1 and 100</p>
+          <p id="guesses">
+            Your guesses will be shown here! You only have 10 guesses!
+          </p>
+          <p id="attempt#"></p>
+          <p id="time">Elapsed Time: 00:00:00</p>
+          <input
+            type="text"
+            name="guess"
+            id="guess"
+            placeholder="type number, click guess -->"
+            disabled
+          />
+          <button id="guess-btn">Start</button>
+          <button id="quit-btn">Reset</button>
+        </div>
+        <div id="gameInfo">
+          <h4>Lowest # of guesses:</h4>
+          <p id="lowest">0</p>
+          <h4>Current # of guesses:</h4>
+          <p id="current">0 of 10!</p>
+        </div>
+      </div>
     </main>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

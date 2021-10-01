@@ -37,7 +37,7 @@ function startGame() {
     btn.removeEventListener("click", startGame);
     btn.addEventListener("click", guess);
 
-    // Start the game clock
+    // Start the game clock and stop when correct number is guessed
     const timeLapsed = setInterval(clock, 1000);
 
     function clock() {
